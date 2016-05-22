@@ -24,9 +24,11 @@ class LoginScreenRouter: LoginScreenRouterInput
         }
     }
     
-    func presentAlbumList() {
+    func presentAlbumList(user: User) {
         if let albumListController = presenter.albumListScreen.controller() {
             navigationController.pushViewController(albumListController, animated: true)
+            presenter.albumListScreen.downloadWithUser(user)
+            
         }
     }
     

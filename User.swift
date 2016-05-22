@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct User {
-    
+struct User
+{
     var userId: String?
     var accessToken: String?    
 }

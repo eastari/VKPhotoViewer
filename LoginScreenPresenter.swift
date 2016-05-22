@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginScreenPresenter: PresenterOfModules, LoginScreenModuleInput, LoginScreenViewOutput, LoginScreenInteractorOutput
+class LoginScreenPresenter:  LoginScreenModuleInput, LoginScreenViewOutput, LoginScreenInteractorOutput
 {
     var view: LoginScreenViewInput!
     var interactor: LoginScreenInteractorInput!
@@ -16,12 +16,6 @@ class LoginScreenPresenter: PresenterOfModules, LoginScreenModuleInput, LoginScr
     var albumListScreen : AlbumListModuleInput!
     
     weak var output: LoginScreenModuleOutput?
-    
-    //MARK: PresenterOfModules - mediator pattern
-    
-    override func receive(message: Any) {
-        print("Received LoginScreenPresenter: \(message)")
-    }
     
     //MARK:  LoginScreenModuleInput
     
@@ -43,8 +37,7 @@ class LoginScreenPresenter: PresenterOfModules, LoginScreenModuleInput, LoginScr
     
     func userInitialized(user: User) {
         
-        router.presentAlbumList()
-        self.send(user)
+        router.presentAlbumList(user)
 
     }
     

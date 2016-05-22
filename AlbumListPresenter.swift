@@ -8,21 +8,12 @@
 
 import UIKit
 
-class AlbumListPresenter: PresenterOfModules, AlbumListModuleInput, AlbumListViewOutput, AlbumListInteractorOutput
+class AlbumListPresenter:  AlbumListModuleInput, AlbumListViewOutput, AlbumListInteractorOutput
 {
     var view: AlbumListViewInput!
     var interactor: AlbumListInteractorInput!
     var router: AlbumListRouterInput!
     var photosListScreen : PhotosListModuleInput!
-    
-    //MARK: PresenterOfModules - mediator pattern
-    
-    override func receive(message: Any) {
-        
-        if let user = message as? User {
-            interactor.loadAlbums(user)
-        }
-    }
     
     //MARK:  AlbumListModuleInput
     
@@ -31,6 +22,11 @@ class AlbumListPresenter: PresenterOfModules, AlbumListModuleInput, AlbumListVie
         return router.controller()
     }
     
+    func downloadWithUser(user: User) {
+        
+        interactor.loadAlbums(user)
+    }
+
     //MARK:  AlbumListInteractorOutput
     
     func modelDidLoad(model: [AlbumsDomainModel]) {
@@ -45,8 +41,7 @@ class AlbumListPresenter: PresenterOfModules, AlbumListModuleInput, AlbumListVie
     
     func albumDidSelect(album: [PhotosDomainModel]) {
         
-        router.presentPhotosList()
-        self.send(album)
+        router.presentPhotosList(album)
     }
     
 }

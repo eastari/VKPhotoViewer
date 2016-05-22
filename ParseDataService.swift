@@ -11,12 +11,11 @@ import Foundation
 
 class ParseDataService: ParseDataServiceInterface {
     
-    var httpString: HttpStringServiceInterface!
+    var urlStringBuilder: URLStringBuilderInterface!
     
     func getModelsFromJSON(json: AnyObject, userId: String, method: MethodsAPI, accessToken: String?, completion: (model: [AlbumsDomainModel]) -> Void) {
         
-        //maximus
-        self.httpString = HttpStringService()
+        self.urlStringBuilder = URLStringBuilder()
 
         var albums = [AlbumsDomainModel]()
         albums = parseJsonOfAlbums(json: json, method: .Albums)
@@ -29,9 +28,8 @@ class ParseDataService: ParseDataServiceInterface {
                 "user_id"   : userId,
                 "album_id"  : i.id,
             ]
-            let url =  self.httpString.httpStringConstructor(.Photos, parameters: parametersOfRequest, accessToken: accessToken)
-            
-            // maximus
+            let url =  self.urlStringBuilder.urlStringBuilder(.Photos, parameters: parametersOfRequest, accessToken: accessToken)
+
             // request
             let data = NSData(contentsOfURL:NSURL(string: url)!)
             

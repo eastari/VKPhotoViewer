@@ -11,6 +11,7 @@ import Foundation
 protocol PhotoScreenModuleInput: class {
     
     func controller() -> UIViewController?
+    func downloadWithPhoto(photo: PhotosDomainModel)
 }
 
 protocol PhotoScreenModuleOutput: class {

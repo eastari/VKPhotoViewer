@@ -8,23 +8,12 @@
 
 import UIKit
 
-class PhotosListPresenter: PresenterOfModules, PhotosListModuleInput, PhotosListViewOutput, PhotosListInteractorOutput
+class PhotosListPresenter:  PhotosListModuleInput, PhotosListViewOutput, PhotosListInteractorOutput
 {
     var view: PhotosListViewInput!
     var interactor: PhotosListInteractorInput!
     var router: PhotosListRouterInput!
     var photoScreen : PhotoScreenModuleInput!
-
-    //MARK: PresenterOfModules - mediator pattern
-    
-    override func receive(message: Any) {
-        
-        if let album = message as? [PhotosDomainModel] {
-            view.update(withData: album)
-        } else {
-            view.updateWithoutData()
-        }
-    }
     
     //MARK:  PhotosListModuleInput
     
@@ -33,12 +22,16 @@ class PhotosListPresenter: PresenterOfModules, PhotosListModuleInput, PhotosList
         return router.controller()
     }
     
+    func downloadWithAlbum(album: [PhotosDomainModel]) {
+        
+        view.update(withData: album)
+    }
+    
     //MARK:  PhotosListViewOutput
     
     func photoDidSelect(photo: PhotosDomainModel) {
         
-        router.presentPhotoScreen()
-        self.send(photo)
+        router.presentPhotoScreen(photo)
     }
     
     func backButtonDidSelect() {

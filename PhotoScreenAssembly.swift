@@ -10,9 +10,9 @@ import UIKit
 
 class PhotoScreenAssembly
 {
-    class func createModule(mediator: Mediator) -> PhotoScreenModuleInput
+    class func createModule() -> PhotoScreenModuleInput
     {
-        let presenter = PhotoScreenPresenter(mediator: mediator)
+        let presenter = PhotoScreenPresenter()
         let vc = initializeViewController()
         let interactor = PhotoScreenInteractor()
         let router = PhotoScreenRouter()
@@ -28,11 +28,8 @@ class PhotoScreenAssembly
         router.viewController = vc
         
         // Dependences on the services
-        interactor.httpString = HttpStringService()
+        interactor.urlStringBuilder = URLStringBuilder()
         interactor.serverAPI = ServerManager()
-        
-        //mediator pattern
-        mediator.addPresenterOfModules(presenter)
         
         return presenter
     }

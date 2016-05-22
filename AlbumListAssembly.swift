@@ -10,9 +10,9 @@ import UIKit
 
 class AlbumListAssembly
 {
-    class func createModule(mediator: Mediator) -> AlbumListModuleInput
+    class func createModule() -> AlbumListModuleInput
     {
-        let presenter = AlbumListPresenter(mediator: mediator)
+        let presenter = AlbumListPresenter()
         let vc = initializeViewController()
         let interactor = AlbumListInteractor()
         let router = AlbumListRouter()
@@ -28,14 +28,12 @@ class AlbumListAssembly
         router.viewController = vc
         
         // Dependences on the services
-        interactor.httpString = HttpStringService()
+        interactor.httpString = URLStringBuilder()
         interactor.parseDataAPI = ParseDataService()
         interactor.serverAPI = ServerManager()
+        interactor.jsonSerialization = JSON()
         
-        //mediator pattern
-        mediator.addPresenterOfModules(presenter)
-        
-        presenter.photosListScreen = PhotosListAssembly.createModule(mediator)
+        presenter.photosListScreen = PhotosListAssembly.createModule()
         
         return presenter
     }

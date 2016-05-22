@@ -19,9 +19,8 @@ class ImageDownloader: NSOperation {
     }
     
     override func main() {
-        
-        // maximus
-        cacheDirectoryPath = CacheSingletone.sharedCacheUpdater.createCachePath()
+
+        cacheDirectoryPath = CacheService.sharedCacheUpdater.createCachePath()
         
         let imageHashNumber = String(self.photoRecord.imageURL).hash
         let imageDevicePath = (self.cacheDirectoryPath! as NSString).stringByAppendingPathComponent("\(imageHashNumber)")

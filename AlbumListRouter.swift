@@ -37,10 +37,11 @@ class AlbumListRouter: AlbumListRouterInput
     }
     
     
-    func presentPhotosList() {
+    func presentPhotosList(album: [PhotosDomainModel]) {
         if let nc = viewController?.navigationController {
             if let photosListController = presenter.photosListScreen.controller() {
                 nc.pushViewController(photosListController, animated: true)
+                presenter.photosListScreen.downloadWithAlbum(album)
             }
 
         }

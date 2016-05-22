@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class ServerManager: NSObject, ServerManagerInterface {
     
     // Simple singletone pattern

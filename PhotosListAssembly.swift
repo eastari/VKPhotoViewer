@@ -10,9 +10,9 @@ import UIKit
 
 class PhotosListAssembly
 {
-    class func createModule(mediator: Mediator) -> PhotosListModuleInput
+    class func createModule() -> PhotosListModuleInput
     {
-        let presenter = PhotosListPresenter(mediator: mediator)
+        let presenter = PhotosListPresenter()
         let vc = initializeViewController()
         let interactor = PhotosListInteractor()
         let router = PhotosListRouter()
@@ -27,10 +27,7 @@ class PhotosListAssembly
         router.presenter = presenter
         router.viewController = vc
         
-        //mediator pattern
-        mediator.addPresenterOfModules(presenter)
-        
-        presenter.photoScreen = PhotoScreenAssembly.createModule(mediator)
+        presenter.photoScreen = PhotoScreenAssembly.createModule()
         
         return presenter
     }

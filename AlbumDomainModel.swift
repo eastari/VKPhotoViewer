@@ -1,5 +1,5 @@
 //
-//  AlbumsDomainModel.swift
+//  AlbumDomainModel.swift
 //  VKPhotoViewer
 //
 //  Created by Евгений Стариков on 04.05.16.
@@ -13,6 +13,18 @@ class AlbumsDomainModel: ImageParentDomainModel {
     var thumbId = -1
     var photos:[PhotosDomainModel]?
 }
+
+
+//class AlbumDomainModel
+//{
+//    var title: String
+//    var thumbPhotoNumber = -1
+//    var photos:[PhotoDomainModel]?
+//    
+//    init (title: String) {
+//        self.title = title
+//    }
+//}
 
 
 

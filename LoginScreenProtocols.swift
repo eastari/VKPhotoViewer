@@ -40,6 +40,6 @@ protocol LoginScreenInteractorOutput: class {
 protocol LoginScreenRouterInput {
     
     func present(fromWindow window: UIWindow)
-    func presentAlbumList()
+    func presentAlbumList(user: User)
 }
 

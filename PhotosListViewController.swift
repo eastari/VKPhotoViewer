@@ -20,6 +20,7 @@ class PhotosListViewController: UIViewController, PhotosListViewInput {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        tableView.separatorStyle = .None
     }
     
     

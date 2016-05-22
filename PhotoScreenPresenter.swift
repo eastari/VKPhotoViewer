@@ -8,28 +8,23 @@
 
 import UIKit
 
-class PhotoScreenPresenter: PresenterOfModules, PhotoScreenModuleInput, PhotoScreenViewOutput, PhotoScreenInteractorOutput
+class PhotoScreenPresenter:  PhotoScreenModuleInput, PhotoScreenViewOutput, PhotoScreenInteractorOutput
 {
     var view: PhotoScreenViewInput!
     var interactor: PhotoScreenInteractorInput!
     var router: PhotoScreenRouterInput!
-    
-    //MARK: PresenterOfModules - mediator pattern
-    
-    override func receive(message: Any) {
-        
-        if let photo = message as? PhotosDomainModel {
-            interactor.loadPhoto(photo)
-        } else {
-            view.updateWithoutData()
-        }
-    }
+
 
     //MARK:  PhotoScreenModuleInput
     
     func controller() -> UIViewController? {
         
         return router.controller()
+    }
+    
+    func downloadWithPhoto(photo: PhotosDomainModel) {
+        
+        interactor.loadPhoto(photo)
     }
     
     //MARK:  PhotoScreenInteractorOutput

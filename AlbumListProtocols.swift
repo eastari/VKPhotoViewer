@@ -11,6 +11,7 @@ import Foundation
 protocol AlbumListModuleInput: class {
     
     func controller() -> UIViewController?
+    func downloadWithUser(user: User)
 }
 
 protocol AlbumListModuleOutput: class {
@@ -43,5 +44,5 @@ protocol AlbumListRouterInput: class {
     
     func controller() -> UIViewController?
     func dismiss()
-    func presentPhotosList()
+    func presentPhotosList(album: [PhotosDomainModel])
 }

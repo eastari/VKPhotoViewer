@@ -1,5 +1,5 @@
 //
-//  HttpStringService.swift
+//  URLStringBuilder.swift
 //  VKPhotoViewer
 //
 //  Created by Евгений Стариков on 09.05.16.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-class HttpStringService: HttpStringServiceInterface {
+class URLStringBuilder: URLStringBuilderInterface {
     
-    func httpStringConstructor(method: MethodsAPI, parameters: NSDictionary, accessToken: String?) -> String {
+    func urlStringBuilder(method: MethodsAPI, parameters: NSDictionary, accessToken: String?) -> String {
         var httpBody = ""
         var parametersBody = ""
         var accessTokenBody = ""

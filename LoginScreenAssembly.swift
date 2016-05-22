@@ -12,8 +12,8 @@ class LoginScreenAssembly
 {
     class func createModule() -> LoginScreenModuleInput
     {
-        let mediator = Mediator()
-        let presenter = LoginScreenPresenter(mediator: mediator)
+       
+        let presenter = LoginScreenPresenter()
         let vc = initializeViewController()
         let interactor = LoginScreenInteractor()
         let router = LoginScreenRouter()
@@ -28,10 +28,7 @@ class LoginScreenAssembly
         router.presenter = presenter
         router.viewController = vc
         
-        //mediator pattern
-        mediator.addPresenterOfModules(presenter)
-        
-        presenter.albumListScreen = AlbumListAssembly.createModule(mediator)
+        presenter.albumListScreen = AlbumListAssembly.createModule()
         
         return presenter
     }

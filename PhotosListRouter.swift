@@ -27,10 +27,11 @@ class PhotosListRouter: PhotosListRouterInput
         }
     }
     
-    func presentPhotoScreen() {
+    func presentPhotoScreen(photo: PhotosDomainModel) {
         if let nc = viewController?.navigationController {
             if let photoScreenController = presenter.photoScreen.controller() {
                 nc.pushViewController(photoScreenController, animated: true)
+                presenter.photoScreen.downloadWithPhoto(photo)
             }
             
         }

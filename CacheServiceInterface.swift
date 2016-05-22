@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CacheSingletoneInterface: class {
+protocol CacheServiceInterface: class {
     
     func createCachePath() -> String?
     

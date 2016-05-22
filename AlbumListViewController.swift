@@ -21,6 +21,7 @@ class AlbumListViewController: UIViewController, AlbumListViewInput {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        tableView.separatorStyle = .None
     }
     
     //MARK:  AlbumListViewInput
@@ -81,6 +82,16 @@ class AlbumListViewController: UIViewController, AlbumListViewInput {
         
         selectedAlbum = data![indexPath.row].photos
         output.albumDidSelect(selectedAlbum!)
+    }
+    
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 20))
+        footerView.backgroundColor = color_VK
+        return footerView
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 20.0
     }
     
     // add operations to the download queue for photos in the table

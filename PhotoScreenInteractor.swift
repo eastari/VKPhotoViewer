@@ -13,7 +13,7 @@ class PhotoScreenInteractor: PhotoScreenInteractorInput {
     weak var output: PhotoScreenInteractorOutput!
     
     var serverAPI: ServerManagerInterface!
-    var httpString: HttpStringServiceInterface!
+    var urlStringBuilder: URLStringBuilderInterface!
  
     func loadPhoto(photo: PhotosDomainModel)  {
         

@@ -8,10 +8,10 @@
 
 import UIKit
 
-class CacheSingletone: NSObject {
+class CacheService: NSObject {
     
     // Simple singletone pattern
-    static let sharedCacheUpdater =  CacheSingletone()
+    static let sharedCacheUpdater =  CacheService()
     
     var cachePath: String? = ""
 
