@@ -1,0 +1,25 @@
+### Headers settings
+company: StarikovEvgen
+
+### Xcode project settings
+project_name: VKPhotoViewer
+xcodeproj_path: VKPhotoViewer.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: VKPhotoViewer
+
+# The file path for new modules
+project_file_path: Classes/UserStory/Main
+
+# The Xcode group path to new modules
+project_group_path: Classes/UserStory/Main
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+catalogs:
+- 'https://github.com/MaksimBazarov/swift-templates'
+templates:
+- {name: mbsvt-min-bc}

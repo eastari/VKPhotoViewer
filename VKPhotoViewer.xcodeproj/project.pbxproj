@@ -7,62 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0409E3A81CDFB5D500F00AFF /* ParseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409E3A71CDFB5D500F00AFF /* ParseDataService.swift */; };
-		0409E3AA1CDFB63800F00AFF /* ParseDataServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409E3A91CDFB63800F00AFF /* ParseDataServiceInterface.swift */; };
 		042A40FD1CDB215200828DA6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 042A40FC1CDB215200828DA6 /* Podfile */; };
 		042A40FF1CDB26DC00828DA6 /* libVK-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042A40FE1CDB26DC00828DA6 /* libVK-ios-sdk.a */; };
-		0458B38A1CDA791F00995807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458B3891CDA791F00995807 /* AppDelegate.swift */; };
-		0458B38C1CDA791F00995807 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458B38B1CDA791F00995807 /* AlbumListViewController.swift */; };
-		0458B38F1CDA791F00995807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0458B38D1CDA791F00995807 /* Main.storyboard */; };
-		0458B3911CDA791F00995807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0458B3901CDA791F00995807 /* Assets.xcassets */; };
-		0458B3941CDA791F00995807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0458B3921CDA791F00995807 /* LaunchScreen.storyboard */; };
-		0458B39C1CDA7E7F00995807 /* AlbumListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458B39B1CDA7E7F00995807 /* AlbumListProtocols.swift */; };
-		0458B39E1CDA7F8D00995807 /* AlbumDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458B39D1CDA7F8D00995807 /* AlbumDomainModel.swift */; };
-		0458B3A31CDA84DA00995807 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458B3A11CDA84DA00995807 /* AlbumCell.swift */; };
-		04A123791CE61A0E002AF24F /* AlbumListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123781CE61A0E002AF24F /* AlbumListAssembly.swift */; };
-		04A1237B1CE61A49002AF24F /* AlbumListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1237A1CE61A49002AF24F /* AlbumListPresenter.swift */; };
-		04A1237D1CE61A7A002AF24F /* AlbumListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1237C1CE61A7A002AF24F /* AlbumListInteractor.swift */; };
-		04A1237F1CE61AB0002AF24F /* AlbumListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1237E1CE61AB0002AF24F /* AlbumListRouter.swift */; };
-		04A123811CE769F6002AF24F /* ServerManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123801CE769F6002AF24F /* ServerManagerInterface.swift */; };
-		04A123831CE7713C002AF24F /* PhotosListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123821CE7713C002AF24F /* PhotosListProtocols.swift */; };
-		04A123851CE77156002AF24F /* PhotosListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123841CE77156002AF24F /* PhotosListAssembly.swift */; };
-		04A123871CE7716F002AF24F /* PhotosListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123861CE7716F002AF24F /* PhotosListPresenter.swift */; };
-		04A123891CE77191002AF24F /* PhotosListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123881CE77191002AF24F /* PhotosListInteractor.swift */; };
-		04A1238B1CE771A2002AF24F /* PhotosListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1238A1CE771A2002AF24F /* PhotosListRouter.swift */; };
-		04A1238D1CE771B8002AF24F /* PhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1238C1CE771B8002AF24F /* PhotosListViewController.swift */; };
-		04A1238F1CE77EDE002AF24F /* PhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1238E1CE77EDE002AF24F /* PhotoScreenViewController.swift */; };
-		04A123911CE7AB13002AF24F /* PhotoScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123901CE7AB13002AF24F /* PhotoScreenProtocols.swift */; };
-		04A123931CE7AB6C002AF24F /* PhotoScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123921CE7AB6C002AF24F /* PhotoScreenAssembly.swift */; };
-		04A123951CE7AB88002AF24F /* PhotoScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123941CE7AB88002AF24F /* PhotoScreenPresenter.swift */; };
-		04A123971CE7AC3E002AF24F /* PhotoScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123961CE7AC3E002AF24F /* PhotoScreenInteractor.swift */; };
-		04A123991CE7ACA2002AF24F /* PhotoScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A123981CE7ACA2002AF24F /* PhotoScreenRouter.swift */; };
-		04A1239B1CE7E1BC002AF24F /* CacheServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1239A1CE7E1BC002AF24F /* CacheServiceInterface.swift */; };
-		04BD1CC91CEA1F6200368622 /* AlbumParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1CC81CEA1F6200368622 /* AlbumParser.swift */; };
-		04BD1CCC1CEA2D4000368622 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1CCB1CEA2D4000368622 /* JSON.swift */; };
-		04DAE9311CEF088900BE504D /* ImageParentDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE9301CEF088900BE504D /* ImageParentDomainModel.swift */; };
-		04DAE9331CEF0FDE00BE504D /* MainServiceGetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE9321CEF0FDE00BE504D /* MainServiceGetModel.swift */; };
-		04DAE9351CEF365400BE504D /* VKColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE9341CEF365400BE504D /* VKColors.swift */; };
-		04E249411CDE1A8900B24B51 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E249401CDE1A8900B24B51 /* ServerManager.swift */; };
-		04E4ACD11CE267F5003C9A51 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4ACD01CE267F5003C9A51 /* RootRouter.swift */; };
-		04E7A4A31CE3598E00CE4C28 /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4A21CE3598E00CE4C28 /* LoginScreenProtocols.swift */; };
-		04E7A4A71CE3602500CE4C28 /* LoginScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4A61CE3602500CE4C28 /* LoginScreenAssembly.swift */; };
-		04E7A4A91CE3608700CE4C28 /* LoginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4A81CE3608700CE4C28 /* LoginScreenPresenter.swift */; };
-		04E7A4AB1CE360BC00CE4C28 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4AA1CE360BC00CE4C28 /* LoginScreenViewController.swift */; };
-		04E7A4AD1CE3611300CE4C28 /* LoginScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4AC1CE3611300CE4C28 /* LoginScreenInteractor.swift */; };
-		04E7A4AF1CE3627100CE4C28 /* LoginScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4AE1CE3627100CE4C28 /* LoginScreenRouter.swift */; };
-		04E7A4B21CE3CC0600CE4C28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4B11CE3CC0600CE4C28 /* Constants.swift */; };
-		04E7A4B41CE3CC6800CE4C28 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4B31CE3CC6800CE4C28 /* Enums.swift */; };
-		04E7A4B61CE3DEAD00CE4C28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7A4B51CE3DEAD00CE4C28 /* User.swift */; };
-		04E7E4DD1CDC75AC001E37DF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7E4DC1CDC75AC001E37DF /* ImageDownloader.swift */; };
-		04E7E4DF1CDCEBD9001E37DF /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E7E4DE1CDCEBD9001E37DF /* CacheService.swift */; };
-		04EA2C231CE084AD0075053D /* URLStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA2C221CE084AD0075053D /* URLStringBuilder.swift */; };
-		04EA2C251CE085040075053D /* URLStringBuilderInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA2C241CE085040075053D /* URLStringBuilderInterface.swift */; };
-		04EA2C291CE0FB740075053D /* PhotoDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA2C281CE0FB740075053D /* PhotoDomainModel.swift */; };
-		04F326AD1CF1E582001DEBE2 /* VKPhotoViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F326AC1CF1E582001DEBE2 /* VKPhotoViewerUITests.swift */; };
-		04F80F981CEC60C1005C9D67 /* JSONInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F80F971CEC60C1005C9D67 /* JSONInterface.swift */; };
-		04F80F9A1CEC7288005C9D67 /* PhotoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F80F991CEC7288005C9D67 /* PhotoParser.swift */; };
+		04E789861CF3219A000CA09A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E789401CF3219A000CA09A /* AppDelegate.swift */; };
+		04E789871CF3219A000CA09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E789421CF3219A000CA09A /* Assets.xcassets */; };
+		04E789881CF3219A000CA09A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E789431CF3219A000CA09A /* LaunchScreen.storyboard */; };
+		04E789891CF3219A000CA09A /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E789441CF3219A000CA09A /* RootRouter.swift */; };
+		04E7898A1CF3219A000CA09A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E789491CF3219A000CA09A /* Main.storyboard */; };
+		04E789CC1CF32D24000CA09A /* ThreadHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E789C61CF32D24000CA09A /* ThreadHelpers.swift */; };
+		04E789CD1CF32D24000CA09A /* KeyboardParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E789C81CF32D24000CA09A /* KeyboardParameters.swift */; };
+		04E789CE1CF32D24000CA09A /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E789C91CF32D24000CA09A /* ViperPresenter.swift */; };
+		04E789CF1CF32D24000CA09A /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E789CA1CF32D24000CA09A /* ViperRouter.swift */; };
+		04E789D01CF32D24000CA09A /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E789CB1CF32D24000CA09A /* ViperViewController.swift */; };
+		11033CA0148AA3C9E2CFBC54 /* PhotosListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256AE23B52D95DAE97CA8F38 /* PhotosListModuleProtocols.swift */; };
+		1BC4938BD006E52DCE23C385 /* AlbumListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446BD82A8DA2CF1B7FC114DD /* AlbumListPresenter.swift */; };
+		1EADC7586B135E34A5F4AC29 /* PhotoScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50570033EC5D6552D52599C /* PhotoScreenPresenter.swift */; };
+		39702E24B6ED8D1C47BF2501 /* PhotosListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D780146485A12D0356130DF /* PhotosListAssembly.swift */; };
+		4C4C6EFD9AC87ED8EDB6623E /* NLoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151174877AEFA733A11D0933 /* NLoginScreenViewController.swift */; };
+		65EF9D7BBC7148194BA7D517 /* LoginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93C3E98A52F0E108624583C /* LoginScreenPresenter.swift */; };
+		68DEF57AF1BA34D46BC79588 /* NPhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA9DF079DBAFCDC035C9BF1 /* NPhotoScreenViewController.swift */; };
+		6CDD67CED1356628D89A8007 /* PhotosListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3FA7C67774D90F9613785A /* PhotosListRouter.swift */; };
+		739EDE9E9F0A08AF598ABACC /* LoginScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0ABF22779E1FCF2E84D6B /* LoginScreenRouter.swift */; };
+		78570C365991517C9C755681 /* NPhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20DC2B29F2F3B2DD1DD9508 /* NPhotosListViewController.swift */; };
 		85440EECAEF8815C2FE5EF5C /* Pods_VKPhotoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1BE67C3286EDF0D6FB0484 /* Pods_VKPhotoViewer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8590C2719AF0EE9875B4364A /* PhotoScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C2B328DE2675E3E91F487 /* PhotoScreenInteractor.swift */; };
 		8925D8A138CE31F533336517 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4053B534326E1319595F8F0 /* libPods.a */; };
+		8F0F81836FCFB6856FD26393 /* LoginScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604AD690DBAEE05602BA1CC /* LoginScreenInteractor.swift */; };
+		8F605D5094139CF576B7E95D /* AlbumListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FBBA0978522A4C8A308B0 /* AlbumListRouter.swift */; };
+		95E13C7AE2B5014256BA25CE /* LoginScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BB0D94594620AC8438674F /* LoginScreenAssembly.swift */; };
+		9D60D55750055D8C28471851 /* NAlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D79C42F837BAF02E74CCCE8 /* NAlbumListViewController.swift */; };
+		9D658D32CFFE12189B95F3C1 /* PhotosListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBE5E1B65190B095C01A42D /* PhotosListPresenter.swift */; };
+		9FC188AE9D2E8BC44A843612 /* AlbumListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413555A0530BC580D92E728 /* AlbumListAssembly.swift */; };
+		AB02C78EEB155FCF062F2E85 /* PhotoScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593BBBF48EE5AE044C0B2504 /* PhotoScreenAssembly.swift */; };
+		AEA8A2A3067F7471FCAF5E03 /* AlbumListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66484B1CB54A6A893EB142 /* AlbumListInteractor.swift */; };
+		CBBEF3E9FB7D2C39E0774951 /* PhotosListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D028AAF38C0364CB3474EC8 /* PhotosListInteractor.swift */; };
+		D4346F33A35B80EAC2057120 /* PhotoScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D4113921968E34B3E4888 /* PhotoScreenRouter.swift */; };
+		D57EB52C60C2176B8F1978FC /* PhotoScreenModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A944F8348FE63092680458D /* PhotoScreenModuleProtocols.swift */; };
+		D8A20A61BE9B03C5012E697F /* AlbumListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6250ED2B13DF4A54F4CC0696 /* AlbumListModuleProtocols.swift */; };
+		E43DB0D30C6401905409FDE9 /* LoginScreenModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B34FA3897CB868FF63E875F /* LoginScreenModuleProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,69 +58,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0409E3A71CDFB5D500F00AFF /* ParseDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDataService.swift; sourceTree = "<group>"; };
-		0409E3A91CDFB63800F00AFF /* ParseDataServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDataServiceInterface.swift; sourceTree = "<group>"; };
-		0409E3AE1CDFCE2100F00AFF /* VKPhotoViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VKPhotoViewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		042A40FC1CDB215200828DA6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		042A40FE1CDB26DC00828DA6 /* libVK-ios-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libVK-ios-sdk.a"; path = "Pods/../build/Debug-iphoneos/libVK-ios-sdk.a"; sourceTree = "<group>"; };
 		0458B3861CDA791F00995807 /* VKPhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKPhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0458B3891CDA791F00995807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0458B38B1CDA791F00995807 /* AlbumListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
-		0458B38E1CDA791F00995807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0458B3901CDA791F00995807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0458B3931CDA791F00995807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0458B3951CDA791F00995807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0458B39B1CDA7E7F00995807 /* AlbumListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListProtocols.swift; sourceTree = "<group>"; };
-		0458B39D1CDA7F8D00995807 /* AlbumDomainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDomainModel.swift; sourceTree = "<group>"; };
-		0458B3A11CDA84DA00995807 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
-		04A123781CE61A0E002AF24F /* AlbumListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListAssembly.swift; sourceTree = "<group>"; };
-		04A1237A1CE61A49002AF24F /* AlbumListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListPresenter.swift; sourceTree = "<group>"; };
-		04A1237C1CE61A7A002AF24F /* AlbumListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListInteractor.swift; sourceTree = "<group>"; };
-		04A1237E1CE61AB0002AF24F /* AlbumListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListRouter.swift; sourceTree = "<group>"; };
-		04A123801CE769F6002AF24F /* ServerManagerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManagerInterface.swift; sourceTree = "<group>"; };
-		04A123821CE7713C002AF24F /* PhotosListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListProtocols.swift; sourceTree = "<group>"; };
-		04A123841CE77156002AF24F /* PhotosListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListAssembly.swift; sourceTree = "<group>"; };
-		04A123861CE7716F002AF24F /* PhotosListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListPresenter.swift; sourceTree = "<group>"; };
-		04A123881CE77191002AF24F /* PhotosListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListInteractor.swift; sourceTree = "<group>"; };
-		04A1238A1CE771A2002AF24F /* PhotosListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListRouter.swift; sourceTree = "<group>"; };
-		04A1238C1CE771B8002AF24F /* PhotosListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListViewController.swift; sourceTree = "<group>"; };
-		04A1238E1CE77EDE002AF24F /* PhotoScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScreenViewController.swift; sourceTree = "<group>"; };
-		04A123901CE7AB13002AF24F /* PhotoScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScreenProtocols.swift; sourceTree = "<group>"; };
-		04A123921CE7AB6C002AF24F /* PhotoScreenAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScreenAssembly.swift; sourceTree = "<group>"; };
-		04A123941CE7AB88002AF24F /* PhotoScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScreenPresenter.swift; sourceTree = "<group>"; };
-		04A123961CE7AC3E002AF24F /* PhotoScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScreenInteractor.swift; sourceTree = "<group>"; };
-		04A123981CE7ACA2002AF24F /* PhotoScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScreenRouter.swift; sourceTree = "<group>"; };
-		04A1239A1CE7E1BC002AF24F /* CacheServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheServiceInterface.swift; sourceTree = "<group>"; };
-		04BD1CC81CEA1F6200368622 /* AlbumParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumParser.swift; sourceTree = "<group>"; };
-		04BD1CCB1CEA2D4000368622 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		04DAE9301CEF088900BE504D /* ImageParentDomainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageParentDomainModel.swift; sourceTree = "<group>"; };
-		04DAE9321CEF0FDE00BE504D /* MainServiceGetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainServiceGetModel.swift; sourceTree = "<group>"; };
-		04DAE9341CEF365400BE504D /* VKColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKColors.swift; sourceTree = "<group>"; };
-		04E249401CDE1A8900B24B51 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
-		04E4ACD01CE267F5003C9A51 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		04E7A4A21CE3598E00CE4C28 /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
-		04E7A4A61CE3602500CE4C28 /* LoginScreenAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenAssembly.swift; sourceTree = "<group>"; };
-		04E7A4A81CE3608700CE4C28 /* LoginScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenPresenter.swift; sourceTree = "<group>"; };
-		04E7A4AA1CE360BC00CE4C28 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
-		04E7A4AC1CE3611300CE4C28 /* LoginScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenInteractor.swift; sourceTree = "<group>"; };
-		04E7A4AE1CE3627100CE4C28 /* LoginScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenRouter.swift; sourceTree = "<group>"; };
-		04E7A4B11CE3CC0600CE4C28 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		04E7A4B31CE3CC6800CE4C28 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		04E7A4B51CE3DEAD00CE4C28 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		04E7E4DC1CDC75AC001E37DF /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		04E7E4DE1CDCEBD9001E37DF /* CacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
-		04EA2C221CE084AD0075053D /* URLStringBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLStringBuilder.swift; sourceTree = "<group>"; };
-		04EA2C241CE085040075053D /* URLStringBuilderInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLStringBuilderInterface.swift; sourceTree = "<group>"; };
-		04EA2C281CE0FB740075053D /* PhotoDomainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDomainModel.swift; sourceTree = "<group>"; };
+		04E789401CF3219A000CA09A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04E789421CF3219A000CA09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04E789431CF3219A000CA09A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04E789441CF3219A000CA09A /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		04E789491CF3219A000CA09A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		04E789C61CF32D24000CA09A /* ThreadHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelpers.swift; sourceTree = "<group>"; };
+		04E789C81CF32D24000CA09A /* KeyboardParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardParameters.swift; sourceTree = "<group>"; };
+		04E789C91CF32D24000CA09A /* ViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
+		04E789CA1CF32D24000CA09A /* ViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
+		04E789CB1CF32D24000CA09A /* ViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
+		04E789D11CF34332000CA09A /* VKPhotoViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VKPhotoViewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		04F326AA1CF1E582001DEBE2 /* VKPhotoViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKPhotoViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04F326AC1CF1E582001DEBE2 /* VKPhotoViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKPhotoViewerUITests.swift; sourceTree = "<group>"; };
-		04F326AE1CF1E582001DEBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04F80F971CEC60C1005C9D67 /* JSONInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONInterface.swift; sourceTree = "<group>"; };
-		04F80F991CEC7288005C9D67 /* PhotoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoParser.swift; sourceTree = "<group>"; };
+		151174877AEFA733A11D0933 /* NLoginScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NLoginScreenViewController.swift; sourceTree = "<group>"; };
+		256AE23B52D95DAE97CA8F38 /* PhotosListModuleProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotosListModuleProtocols.swift; sourceTree = "<group>"; };
+		2A944F8348FE63092680458D /* PhotoScreenModuleProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoScreenModuleProtocols.swift; sourceTree = "<group>"; };
+		2C66484B1CB54A6A893EB142 /* AlbumListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumListInteractor.swift; sourceTree = "<group>"; };
+		2F9D4113921968E34B3E4888 /* PhotoScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoScreenRouter.swift; sourceTree = "<group>"; };
+		30B0ABF22779E1FCF2E84D6B /* LoginScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginScreenRouter.swift; sourceTree = "<group>"; };
 		3A1BE67C3286EDF0D6FB0484 /* Pods_VKPhotoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKPhotoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		446BD82A8DA2CF1B7FC114DD /* AlbumListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumListPresenter.swift; sourceTree = "<group>"; };
+		4D028AAF38C0364CB3474EC8 /* PhotosListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotosListInteractor.swift; sourceTree = "<group>"; };
+		4D780146485A12D0356130DF /* PhotosListAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotosListAssembly.swift; sourceTree = "<group>"; };
+		593BBBF48EE5AE044C0B2504 /* PhotoScreenAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoScreenAssembly.swift; sourceTree = "<group>"; };
+		6250ED2B13DF4A54F4CC0696 /* AlbumListModuleProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumListModuleProtocols.swift; sourceTree = "<group>"; };
+		6413555A0530BC580D92E728 /* AlbumListAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumListAssembly.swift; sourceTree = "<group>"; };
+		6B34FA3897CB868FF63E875F /* LoginScreenModuleProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginScreenModuleProtocols.swift; sourceTree = "<group>"; };
+		6D79C42F837BAF02E74CCCE8 /* NAlbumListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NAlbumListViewController.swift; sourceTree = "<group>"; };
 		7926DBB9393125FA6B1E2D69 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		96BB0D94594620AC8438674F /* LoginScreenAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginScreenAssembly.swift; sourceTree = "<group>"; };
+		A20DC2B29F2F3B2DD1DD9508 /* NPhotosListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NPhotosListViewController.swift; sourceTree = "<group>"; };
+		AC6C2B328DE2675E3E91F487 /* PhotoScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoScreenInteractor.swift; sourceTree = "<group>"; };
+		B50570033EC5D6552D52599C /* PhotoScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoScreenPresenter.swift; sourceTree = "<group>"; };
 		B7C5CBC266D224E079BD7A2F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CA3FA7C67774D90F9613785A /* PhotosListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotosListRouter.swift; sourceTree = "<group>"; };
+		DBA9DF079DBAFCDC035C9BF1 /* NPhotoScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NPhotoScreenViewController.swift; sourceTree = "<group>"; };
+		E604AD690DBAEE05602BA1CC /* LoginScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginScreenInteractor.swift; sourceTree = "<group>"; };
+		E93C3E98A52F0E108624583C /* LoginScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginScreenPresenter.swift; sourceTree = "<group>"; };
+		EDBE5E1B65190B095C01A42D /* PhotosListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotosListPresenter.swift; sourceTree = "<group>"; };
 		F4053B534326E1319595F8F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1FBBA0978522A4C8A308B0 /* AlbumListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlbumListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +127,8 @@
 		0458B37D1CDA791F00995807 = {
 			isa = PBXGroup;
 			children = (
+				04E7893E1CF3219A000CA09A /* Classes */,
 				042A40FC1CDB215200828DA6 /* Podfile */,
-				0458B3881CDA791F00995807 /* VKPhotoViewer */,
-				04F326AB1CF1E582001DEBE2 /* VKPhotoViewerUITests */,
 				0458B3871CDA791F00995807 /* Products */,
 				F6077CC13A035671A7279CEB /* Pods */,
 				81BBA53ACE2AA72E8B80AAA4 /* Frameworks */,
@@ -183,169 +144,132 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0458B3881CDA791F00995807 /* VKPhotoViewer */ = {
+		04E7893E1CF3219A000CA09A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0458B3891CDA791F00995807 /* AppDelegate.swift */,
-				04E4ACD01CE267F5003C9A51 /* RootRouter.swift */,
-				04E4ACCE1CE2453B003C9A51 /* Models */,
-				04E7A4B01CE3CB9A00CE4C28 /* General */,
-				04E4ACCD1CE24357003C9A51 /* Services */,
-				04E4ACD21CE26D97003C9A51 /* Helpers */,
-				04E4ACCF1CE24668003C9A51 /* UserStory */,
-				0458B38D1CDA791F00995807 /* Main.storyboard */,
-				0458B3901CDA791F00995807 /* Assets.xcassets */,
-				0458B3921CDA791F00995807 /* LaunchScreen.storyboard */,
-				0458B3951CDA791F00995807 /* Info.plist */,
+				04E7893F1CF3219A000CA09A /* Application */,
+				04E789451CF3219A000CA09A /* Domain */,
+				04E789461CF3219A000CA09A /* Services */,
+				04E789471CF3219A000CA09A /* UserStory */,
 			);
-			path = VKPhotoViewer;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		04BD1CC61CEA1F2600368622 /* VKService */ = {
+		04E7893F1CF3219A000CA09A /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				04BD1CC71CEA1F3900368622 /* ResponseParser */,
+				04E789401CF3219A000CA09A /* AppDelegate.swift */,
+				04E789D11CF34332000CA09A /* VKPhotoViewer-Bridging-Header.h */,
+				04E789411CF3219A000CA09A /* BundleFiles */,
+				04E789441CF3219A000CA09A /* RootRouter.swift */,
+				04E789C41CF32D24000CA09A /* CommonClasses */,
 			);
-			name = VKService;
+			path = Application;
 			sourceTree = "<group>";
 		};
-		04BD1CC71CEA1F3900368622 /* ResponseParser */ = {
+		04E789411CF3219A000CA09A /* BundleFiles */ = {
 			isa = PBXGroup;
 			children = (
-				04BD1CC81CEA1F6200368622 /* AlbumParser.swift */,
-				04F80F991CEC7288005C9D67 /* PhotoParser.swift */,
+				04E789421CF3219A000CA09A /* Assets.xcassets */,
+				04E789431CF3219A000CA09A /* LaunchScreen.storyboard */,
 			);
-			name = ResponseParser;
+			path = BundleFiles;
 			sourceTree = "<group>";
 		};
-		04BD1CCA1CEA2D0D00368622 /* JSONSerealizer */ = {
+		04E789451CF3219A000CA09A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				04F80F971CEC60C1005C9D67 /* JSONInterface.swift */,
-				04BD1CCB1CEA2D4000368622 /* JSON.swift */,
 			);
-			name = JSONSerealizer;
+			path = Domain;
 			sourceTree = "<group>";
 		};
-		04E4ACCD1CE24357003C9A51 /* Services */ = {
+		04E789461CF3219A000CA09A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				04DAE9321CEF0FDE00BE504D /* MainServiceGetModel.swift */,
-				04E7E4DC1CDC75AC001E37DF /* ImageDownloader.swift */,
-				04BD1CCA1CEA2D0D00368622 /* JSONSerealizer */,
-				04BD1CC61CEA1F2600368622 /* VKService */,
-				04A1239A1CE7E1BC002AF24F /* CacheServiceInterface.swift */,
-				04E7E4DE1CDCEBD9001E37DF /* CacheService.swift */,
-				04A123801CE769F6002AF24F /* ServerManagerInterface.swift */,
-				04E249401CDE1A8900B24B51 /* ServerManager.swift */,
-				0409E3A91CDFB63800F00AFF /* ParseDataServiceInterface.swift */,
-				0409E3A71CDFB5D500F00AFF /* ParseDataService.swift */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		04E4ACCE1CE2453B003C9A51 /* Models */ = {
+		04E789471CF3219A000CA09A /* UserStory */ = {
 			isa = PBXGroup;
 			children = (
-				04E7A4B51CE3DEAD00CE4C28 /* User.swift */,
-				04DAE9301CEF088900BE504D /* ImageParentDomainModel.swift */,
-				0458B39D1CDA7F8D00995807 /* AlbumDomainModel.swift */,
-				04EA2C281CE0FB740075053D /* PhotoDomainModel.swift */,
+				04E789481CF3219A000CA09A /* Main */,
 			);
-			name = Models;
+			path = UserStory;
 			sourceTree = "<group>";
 		};
-		04E4ACCF1CE24668003C9A51 /* UserStory */ = {
+		04E789481CF3219A000CA09A /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				04E7A49E1CE357D900CE4C28 /* LoginScreen */,
-				04E7A49F1CE3580100CE4C28 /* AlbumListScreen */,
-				04E7A4A01CE3581700CE4C28 /* PhotosListScreen */,
-				04E7A4A11CE358B000CE4C28 /* PhotoScreen */,
+				04E789491CF3219A000CA09A /* Main.storyboard */,
+				8C7CBC6995915BA5290CC34B /* LoginScreen */,
+				618E16E13E31CF759F946C49 /* AlbumList */,
+				2A80A448059A80DAD3A6E710 /* PhotosList */,
+				82FAF549831E8FAA700641F2 /* PhotoScreen */,
 			);
-			name = UserStory;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		04E4ACD21CE26D97003C9A51 /* Helpers */ = {
+		04E789C41CF32D24000CA09A /* CommonClasses */ = {
 			isa = PBXGroup;
 			children = (
-				04EA2C241CE085040075053D /* URLStringBuilderInterface.swift */,
-				04EA2C221CE084AD0075053D /* URLStringBuilder.swift */,
-				0409E3AE1CDFCE2100F00AFF /* VKPhotoViewer-Bridging-Header.h */,
+				04E789C51CF32D24000CA09A /* ThreadHelpers */,
+				04E789C71CF32D24000CA09A /* ViperBaseClasses */,
 			);
-			name = Helpers;
+			path = CommonClasses;
 			sourceTree = "<group>";
 		};
-		04E7A49E1CE357D900CE4C28 /* LoginScreen */ = {
+		04E789C51CF32D24000CA09A /* ThreadHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				04E7A4A21CE3598E00CE4C28 /* LoginScreenProtocols.swift */,
-				04E7A4A61CE3602500CE4C28 /* LoginScreenAssembly.swift */,
-				04E7A4A81CE3608700CE4C28 /* LoginScreenPresenter.swift */,
-				04E7A4AA1CE360BC00CE4C28 /* LoginScreenViewController.swift */,
-				04E7A4AC1CE3611300CE4C28 /* LoginScreenInteractor.swift */,
-				04E7A4AE1CE3627100CE4C28 /* LoginScreenRouter.swift */,
+				04E789C61CF32D24000CA09A /* ThreadHelpers.swift */,
 			);
-			name = LoginScreen;
+			path = ThreadHelpers;
 			sourceTree = "<group>";
 		};
-		04E7A49F1CE3580100CE4C28 /* AlbumListScreen */ = {
+		04E789C71CF32D24000CA09A /* ViperBaseClasses */ = {
 			isa = PBXGroup;
 			children = (
-				0458B39B1CDA7E7F00995807 /* AlbumListProtocols.swift */,
-				04A123781CE61A0E002AF24F /* AlbumListAssembly.swift */,
-				04A1237A1CE61A49002AF24F /* AlbumListPresenter.swift */,
-				0458B38B1CDA791F00995807 /* AlbumListViewController.swift */,
-				0458B3A11CDA84DA00995807 /* AlbumCell.swift */,
-				04A1237C1CE61A7A002AF24F /* AlbumListInteractor.swift */,
-				04A1237E1CE61AB0002AF24F /* AlbumListRouter.swift */,
+				04E789C81CF32D24000CA09A /* KeyboardParameters.swift */,
+				04E789C91CF32D24000CA09A /* ViperPresenter.swift */,
+				04E789CA1CF32D24000CA09A /* ViperRouter.swift */,
+				04E789CB1CF32D24000CA09A /* ViperViewController.swift */,
 			);
-			name = AlbumListScreen;
+			path = ViperBaseClasses;
 			sourceTree = "<group>";
 		};
-		04E7A4A01CE3581700CE4C28 /* PhotosListScreen */ = {
+		12E8B6B01AAB1B9ECAEB878A /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				04A123821CE7713C002AF24F /* PhotosListProtocols.swift */,
-				04A123841CE77156002AF24F /* PhotosListAssembly.swift */,
-				04A123861CE7716F002AF24F /* PhotosListPresenter.swift */,
-				04A1238C1CE771B8002AF24F /* PhotosListViewController.swift */,
-				04A123881CE77191002AF24F /* PhotosListInteractor.swift */,
-				04A1238A1CE771A2002AF24F /* PhotosListRouter.swift */,
+				2A944F8348FE63092680458D /* PhotoScreenModuleProtocols.swift */,
 			);
-			name = PhotosListScreen;
+			path = Interface;
 			sourceTree = "<group>";
 		};
-		04E7A4A11CE358B000CE4C28 /* PhotoScreen */ = {
+		2A80A448059A80DAD3A6E710 /* PhotosList */ = {
 			isa = PBXGroup;
 			children = (
-				04A123901CE7AB13002AF24F /* PhotoScreenProtocols.swift */,
-				04A123921CE7AB6C002AF24F /* PhotoScreenAssembly.swift */,
-				04A123941CE7AB88002AF24F /* PhotoScreenPresenter.swift */,
-				04A1238E1CE77EDE002AF24F /* PhotoScreenViewController.swift */,
-				04A123961CE7AC3E002AF24F /* PhotoScreenInteractor.swift */,
-				04A123981CE7ACA2002AF24F /* PhotoScreenRouter.swift */,
+				A94A51463FEB551E30612296 /* Interface */,
+				A20DC2B29F2F3B2DD1DD9508 /* NPhotosListViewController.swift */,
+				EDBE5E1B65190B095C01A42D /* PhotosListPresenter.swift */,
+				4D028AAF38C0364CB3474EC8 /* PhotosListInteractor.swift */,
+				CA3FA7C67774D90F9613785A /* PhotosListRouter.swift */,
+				4D780146485A12D0356130DF /* PhotosListAssembly.swift */,
 			);
-			name = PhotoScreen;
+			path = PhotosList;
 			sourceTree = "<group>";
 		};
-		04E7A4B01CE3CB9A00CE4C28 /* General */ = {
+		618E16E13E31CF759F946C49 /* AlbumList */ = {
 			isa = PBXGroup;
 			children = (
-				04E7A4B11CE3CC0600CE4C28 /* Constants.swift */,
-				04E7A4B31CE3CC6800CE4C28 /* Enums.swift */,
-				04DAE9341CEF365400BE504D /* VKColors.swift */,
+				FE7E498C5EA1497B6F15A0E8 /* Interface */,
+				6D79C42F837BAF02E74CCCE8 /* NAlbumListViewController.swift */,
+				446BD82A8DA2CF1B7FC114DD /* AlbumListPresenter.swift */,
+				2C66484B1CB54A6A893EB142 /* AlbumListInteractor.swift */,
+				FF1FBBA0978522A4C8A308B0 /* AlbumListRouter.swift */,
+				6413555A0530BC580D92E728 /* AlbumListAssembly.swift */,
 			);
-			name = General;
-			sourceTree = "<group>";
-		};
-		04F326AB1CF1E582001DEBE2 /* VKPhotoViewerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				04F326AC1CF1E582001DEBE2 /* VKPhotoViewerUITests.swift */,
-				04F326AE1CF1E582001DEBE2 /* Info.plist */,
-			);
-			path = VKPhotoViewerUITests;
+			path = AlbumList;
 			sourceTree = "<group>";
 		};
 		81BBA53ACE2AA72E8B80AAA4 /* Frameworks */ = {
@@ -358,6 +282,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		82FAF549831E8FAA700641F2 /* PhotoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				12E8B6B01AAB1B9ECAEB878A /* Interface */,
+				DBA9DF079DBAFCDC035C9BF1 /* NPhotoScreenViewController.swift */,
+				B50570033EC5D6552D52599C /* PhotoScreenPresenter.swift */,
+				AC6C2B328DE2675E3E91F487 /* PhotoScreenInteractor.swift */,
+				2F9D4113921968E34B3E4888 /* PhotoScreenRouter.swift */,
+				593BBBF48EE5AE044C0B2504 /* PhotoScreenAssembly.swift */,
+			);
+			path = PhotoScreen;
+			sourceTree = "<group>";
+		};
+		8C7CBC6995915BA5290CC34B /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9D44B9084FFAE6202F1576EC /* Interface */,
+				151174877AEFA733A11D0933 /* NLoginScreenViewController.swift */,
+				E93C3E98A52F0E108624583C /* LoginScreenPresenter.swift */,
+				E604AD690DBAEE05602BA1CC /* LoginScreenInteractor.swift */,
+				30B0ABF22779E1FCF2E84D6B /* LoginScreenRouter.swift */,
+				96BB0D94594620AC8438674F /* LoginScreenAssembly.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		9D44B9084FFAE6202F1576EC /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6B34FA3897CB868FF63E875F /* LoginScreenModuleProtocols.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A94A51463FEB551E30612296 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				256AE23B52D95DAE97CA8F38 /* PhotosListModuleProtocols.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		F6077CC13A035671A7279CEB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +331,14 @@
 				7926DBB9393125FA6B1E2D69 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE7E498C5EA1497B6F15A0E8 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6250ED2B13DF4A54F4CC0696 /* AlbumListModuleProtocols.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,10 +424,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0458B3941CDA791F00995807 /* LaunchScreen.storyboard in Resources */,
-				0458B3911CDA791F00995807 /* Assets.xcassets in Resources */,
+				04E789881CF3219A000CA09A /* LaunchScreen.storyboard in Resources */,
+				04E789871CF3219A000CA09A /* Assets.xcassets in Resources */,
 				042A40FD1CDB215200828DA6 /* Podfile in Resources */,
-				0458B38F1CDA791F00995807 /* Main.storyboard in Resources */,
+				04E7898A1CF3219A000CA09A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,54 +478,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E249411CDE1A8900B24B51 /* ServerManager.swift in Sources */,
-				04E7A4B21CE3CC0600CE4C28 /* Constants.swift in Sources */,
-				04A123851CE77156002AF24F /* PhotosListAssembly.swift in Sources */,
-				04E7A4A71CE3602500CE4C28 /* LoginScreenAssembly.swift in Sources */,
-				04E4ACD11CE267F5003C9A51 /* RootRouter.swift in Sources */,
-				04A123871CE7716F002AF24F /* PhotosListPresenter.swift in Sources */,
-				0458B38C1CDA791F00995807 /* AlbumListViewController.swift in Sources */,
-				04DAE9331CEF0FDE00BE504D /* MainServiceGetModel.swift in Sources */,
-				04A1238F1CE77EDE002AF24F /* PhotoScreenViewController.swift in Sources */,
-				04E7A4A91CE3608700CE4C28 /* LoginScreenPresenter.swift in Sources */,
-				04A1237B1CE61A49002AF24F /* AlbumListPresenter.swift in Sources */,
-				04DAE9311CEF088900BE504D /* ImageParentDomainModel.swift in Sources */,
-				04A1238D1CE771B8002AF24F /* PhotosListViewController.swift in Sources */,
-				04BD1CCC1CEA2D4000368622 /* JSON.swift in Sources */,
-				04E7A4A31CE3598E00CE4C28 /* LoginScreenProtocols.swift in Sources */,
-				04A123831CE7713C002AF24F /* PhotosListProtocols.swift in Sources */,
-				0458B39C1CDA7E7F00995807 /* AlbumListProtocols.swift in Sources */,
-				04A123991CE7ACA2002AF24F /* PhotoScreenRouter.swift in Sources */,
-				04A123791CE61A0E002AF24F /* AlbumListAssembly.swift in Sources */,
-				04EA2C291CE0FB740075053D /* PhotoDomainModel.swift in Sources */,
-				04A123891CE77191002AF24F /* PhotosListInteractor.swift in Sources */,
-				04E7A4B41CE3CC6800CE4C28 /* Enums.swift in Sources */,
-				0458B3A31CDA84DA00995807 /* AlbumCell.swift in Sources */,
-				04A123971CE7AC3E002AF24F /* PhotoScreenInteractor.swift in Sources */,
-				0458B38A1CDA791F00995807 /* AppDelegate.swift in Sources */,
-				04A1239B1CE7E1BC002AF24F /* CacheServiceInterface.swift in Sources */,
-				04A123911CE7AB13002AF24F /* PhotoScreenProtocols.swift in Sources */,
-				04A123951CE7AB88002AF24F /* PhotoScreenPresenter.swift in Sources */,
-				04A123811CE769F6002AF24F /* ServerManagerInterface.swift in Sources */,
-				04E7A4AD1CE3611300CE4C28 /* LoginScreenInteractor.swift in Sources */,
-				04EA2C231CE084AD0075053D /* URLStringBuilder.swift in Sources */,
-				04E7A4AF1CE3627100CE4C28 /* LoginScreenRouter.swift in Sources */,
-				04E7E4DD1CDC75AC001E37DF /* ImageDownloader.swift in Sources */,
-				0409E3AA1CDFB63800F00AFF /* ParseDataServiceInterface.swift in Sources */,
-				04F80F9A1CEC7288005C9D67 /* PhotoParser.swift in Sources */,
-				04DAE9351CEF365400BE504D /* VKColors.swift in Sources */,
-				0409E3A81CDFB5D500F00AFF /* ParseDataService.swift in Sources */,
-				0458B39E1CDA7F8D00995807 /* AlbumDomainModel.swift in Sources */,
-				04F80F981CEC60C1005C9D67 /* JSONInterface.swift in Sources */,
-				04A123931CE7AB6C002AF24F /* PhotoScreenAssembly.swift in Sources */,
-				04A1238B1CE771A2002AF24F /* PhotosListRouter.swift in Sources */,
-				04E7A4B61CE3DEAD00CE4C28 /* User.swift in Sources */,
-				04E7E4DF1CDCEBD9001E37DF /* CacheService.swift in Sources */,
-				04BD1CC91CEA1F6200368622 /* AlbumParser.swift in Sources */,
-				04A1237D1CE61A7A002AF24F /* AlbumListInteractor.swift in Sources */,
-				04E7A4AB1CE360BC00CE4C28 /* LoginScreenViewController.swift in Sources */,
-				04A1237F1CE61AB0002AF24F /* AlbumListRouter.swift in Sources */,
-				04EA2C251CE085040075053D /* URLStringBuilderInterface.swift in Sources */,
+				04E789CE1CF32D24000CA09A /* ViperPresenter.swift in Sources */,
+				04E789891CF3219A000CA09A /* RootRouter.swift in Sources */,
+				04E789CC1CF32D24000CA09A /* ThreadHelpers.swift in Sources */,
+				04E789861CF3219A000CA09A /* AppDelegate.swift in Sources */,
+				04E789D01CF32D24000CA09A /* ViperViewController.swift in Sources */,
+				04E789CF1CF32D24000CA09A /* ViperRouter.swift in Sources */,
+				E43DB0D30C6401905409FDE9 /* LoginScreenModuleProtocols.swift in Sources */,
+				04E789CD1CF32D24000CA09A /* KeyboardParameters.swift in Sources */,
+				4C4C6EFD9AC87ED8EDB6623E /* NLoginScreenViewController.swift in Sources */,
+				65EF9D7BBC7148194BA7D517 /* LoginScreenPresenter.swift in Sources */,
+				8F0F81836FCFB6856FD26393 /* LoginScreenInteractor.swift in Sources */,
+				739EDE9E9F0A08AF598ABACC /* LoginScreenRouter.swift in Sources */,
+				95E13C7AE2B5014256BA25CE /* LoginScreenAssembly.swift in Sources */,
+				D8A20A61BE9B03C5012E697F /* AlbumListModuleProtocols.swift in Sources */,
+				9D60D55750055D8C28471851 /* NAlbumListViewController.swift in Sources */,
+				1BC4938BD006E52DCE23C385 /* AlbumListPresenter.swift in Sources */,
+				AEA8A2A3067F7471FCAF5E03 /* AlbumListInteractor.swift in Sources */,
+				8F605D5094139CF576B7E95D /* AlbumListRouter.swift in Sources */,
+				9FC188AE9D2E8BC44A843612 /* AlbumListAssembly.swift in Sources */,
+				11033CA0148AA3C9E2CFBC54 /* PhotosListModuleProtocols.swift in Sources */,
+				78570C365991517C9C755681 /* NPhotosListViewController.swift in Sources */,
+				9D658D32CFFE12189B95F3C1 /* PhotosListPresenter.swift in Sources */,
+				CBBEF3E9FB7D2C39E0774951 /* PhotosListInteractor.swift in Sources */,
+				6CDD67CED1356628D89A8007 /* PhotosListRouter.swift in Sources */,
+				39702E24B6ED8D1C47BF2501 /* PhotosListAssembly.swift in Sources */,
+				D57EB52C60C2176B8F1978FC /* PhotoScreenModuleProtocols.swift in Sources */,
+				68DEF57AF1BA34D46BC79588 /* NPhotoScreenViewController.swift in Sources */,
+				1EADC7586B135E34A5F4AC29 /* PhotoScreenPresenter.swift in Sources */,
+				8590C2719AF0EE9875B4364A /* PhotoScreenInteractor.swift in Sources */,
+				D4346F33A35B80EAC2057120 /* PhotoScreenRouter.swift in Sources */,
+				AB02C78EEB155FCF062F2E85 /* PhotoScreenAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F326AD1CF1E582001DEBE2 /* VKPhotoViewerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,25 +528,6 @@
 			targetProxy = 04F326AF1CF1E582001DEBE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0458B38D1CDA791F00995807 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0458B38E1CDA791F00995807 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0458B3921CDA791F00995807 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0458B3931CDA791F00995807 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0458B3961CDA791F00995807 /* Debug */ = {
@@ -689,7 +626,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vk.VKPhotoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VKPhotoViewer/VKPhotoViewer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/Application/VKPhotoViewer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -709,7 +646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vk.VKPhotoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VKPhotoViewer/VKPhotoViewer-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/Application/VKPhotoViewer-Bridging-Header.h";
 			};
 			name = Release;
 		};

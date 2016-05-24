@@ -1,0 +1,27 @@
+# Template information section
+name: "mbsvt-min-bc"
+summary: "Minified Swift VIPER module template based on base classes for router and controller"
+author: "Maksim Bazarov"
+version: "1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# Interfaces
+- {name: Interface/ModuleProtocols.swift,  path: Code/Interface/module_protocols.swift.liquid}
+
+# View layer
+- {name: ViewController.swift, path: Code/viewcontroller.swift.liquid}
+
+# Presenter layer
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+
+# Interactor layer
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
+
+# Router layer
+- {name: Router.swift, path: Code/router.swift.liquid}
+
+# Configurator
+- {name: Assembly.swift, path: Code/assembly.swift.liquid}
